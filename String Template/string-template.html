@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>String Template</title>
+  </head>
+  <body>
+    <script>
+      const name = "M Fahmy Rizky Kholiq";
+      const template = `Name : ${name}`;
+
+      console.info(template);
+
+      const nilai = 90;
+      const template2 = `Name : ${name}, Lulus : ${nilai > 70}`;
+
+      console.info(template2);
+
+      const multiline = `Nama saya Fahmy,
+sekarang sekolah,
+kadang kalau lagi bosen buka Instagram,
+kalau lagi males, paling tidur`;
+
+      document.writeln("<pre>");
+      document.writeln(multiline);
+      document.writeln("<pre>");
+    </script>
+  </body>
+</html>
