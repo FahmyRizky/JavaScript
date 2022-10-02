@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tipe Data Object</title>
+  </head>
+  <body>
+    <script>
+      const orang = {
+        nama: "Fahmy Rizky",
+        alamat: "Bandung",
+        umur: "16",
+      };
+
+      // Ubah property / Attribute
+      // orang["nama"] = "Fahmy Rizky";
+      // orang["alamat"] = "Bandung";
+      // orang["umur"] = "16";
+
+      console.info(`Nama : ${orang.nama}`);
+      console.info(`Alamat : ${orang.alamat}`);
+      console.info(`Umur : ${orang.umur}`);
+
+      console.table(orang);
+
+      delete orang["umur"];
+
+      console.table(orang);
+    </script>
+  </body>
+</html>

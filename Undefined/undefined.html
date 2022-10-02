@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Undefined</title>
+  </head>
+  <body>
+    <script>
+      let name;
+
+      if (name === undefined) {
+        console.info("UNDEFINED");
+      } else {
+        console.info("DEFINED");
+      }
+
+      const names = ["Fahmy", "Rizky"];
+      delete names[0];
+
+      if (names[0] === undefined) {
+        console.info("ARRAY UNDEFINED");
+      } else {
+        console.info("ARRAY DEFINED");
+      }
+
+      const person = {};
+      if (person.name === undefined) {
+        console.info("OBJECT UNDEFINED");
+      } else {
+        console.info("OBJECT DEFINED");
+      }
+    </script>
+  </body>
+</html>
