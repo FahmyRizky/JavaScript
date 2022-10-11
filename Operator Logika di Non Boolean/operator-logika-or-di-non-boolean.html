@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Operator Logika OR (||) di Non Boolean</title>
+  </head>
+  <body>
+    <script>
+      console.info("Hello" || "");
+      console.info("" || []);
+      console.info("0" || "NOL");
+      console.info(0 || "NOL");
+      console.info(null || "NULL");
+      console.info(undefined || "undefined");
+      console.info(0 || false);
+
+      const person = {
+        firstName: "Fahmy",
+        lastName: "Rizky",
+      };
+
+      const name = person.firstName || person.lastName;
+      console.info(name);
+    </script>
+  </body>
+</html>

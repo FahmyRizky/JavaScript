@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Operator Logika AND (&&) di Non Boolean</title>
+  </head>
+  <body>
+    <script>
+      console.info("Hello" && ''); // ''
+      console.info("" && []); // ""
+      console.info("0" && "NOL"); // "NOL"
+      console.info(0 && ""); // 0
+      console.info(null && "NULL"); // null
+      console.info(undefined && "UNDEFINED"); // undefined
+      console.info("undefined" && "null"); // null
+    </script>
+  </body>
+</html>
