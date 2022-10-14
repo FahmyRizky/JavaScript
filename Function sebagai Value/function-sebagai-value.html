@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function sebagai Value</title>
+  </head>
+  <body>
+    <script>
+      function sayHello(name) {
+        document.writeln(`<p>Hello ${name}</p>`);
+      }
+
+      sayHello("Fahmy");
+
+      const say = sayHello;
+
+      say("Fahmy");
+
+      function giveMeName(callback) {
+        callback("Rizky"); // sayHello("Fahmy");
+      }
+
+      giveMeName(sayHello);
+      giveMeName(say); // giveMeName(sayHello);
+    </script>
+  </body>
+</html>

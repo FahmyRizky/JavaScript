@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function Rest Parameter</title>
+  </head>
+  <body>
+    <script>
+      function sum(name, ...data) {
+        let total = 0;
+        for (const item of data) {
+          total += item;
+        }
+        document.writeln(`<p>Total ${name} is ${total}</p>`);
+      }
+
+      sum("Orange", 1, 0, 24, 435, 24, 676);
+      sum("Apple", 1, 0, 24, 435, 24, 676);
+      sum("Banana", 1, 0, 24, 435, 24, 676);
+
+      const values = [10, 30, 55, 45, 667];
+      sum("Test", ...values);
+
+      function oldSum() {
+        let total = 0;
+        for (const argument of arguments) {
+          total += argument;
+        }
+        document.writeln(`<p>Total is ${total}</p>`);
+      }
+
+      oldSum(1, 2, 3, 4, 5, 6, 7);
+    </script>
+  </body>
+</html>
